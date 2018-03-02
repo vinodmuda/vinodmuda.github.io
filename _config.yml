@@ -1,19 +1,19 @@
 # Site settings
-title: Redmerald &#183; A simple Jekyll theme
-description: "A minimal blog template, built with Jekyll."
-url: "http://github.com/Vesuvium/redmerald"
+title: Emerald | A simple Jekyll blog
+description: "A minimal blog template, build with Jekyll."
+url: "http://www.jacoporabolini.com/emerald"
 author:
-  name: "Vesuvium"
-  url: "http://github.com/Vesuvium"
-
+  name: "Jacopo Rabolini"
+  email: "hello@jacoporabolini.com"
+  url: "http://www.jacoporabolini.com"
 
 # Build settings
-baseurl: /redmerald/ # Change this to your relative path (ex: /blog/), or leave just a /
+baseurl: /emerald # Change this to your relative path (ex: /blog/), or leave just a /
 markdown: kramdown
 source: .
 destination: ./_site
 permalink: /:title
-paginate: 5
+paginate: 8
 paginate_path: /page:num/
 
 # Default values
@@ -25,20 +25,14 @@ defaults:
     values:
       layout: "post"
 
+# Plugins
+gems:
+  - jekyll-paginate
+
 # Custom variables
-# This section holds all the custom variables that are used by this
-# theme.
 version: "1.1.0"
-lang: "en"
-subtitle: "A Jekyll theme"
-
-navigation:
-  - title: Home
-    url: index
-  - title: About
-    url: about
-
-
 
 # Options
-reverse: true
+custom_header: false
+custom_nav_footer: false
+reverse: false

@@ -3,32 +3,12 @@
 	<meta charset="UTF-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 	<meta name="generator" content="Jekyll">
-	
-	{% if page.description %}
-		<meta name="description" content="{{ page.description }}">
-	{% else %}
-		{% if site.description %}
-			<meta name="description" content="{{ site.description }}">
-		{% endif %}
-	{% endif %}
 
-	<title>
-		{% if page.url == '/index.html' %}
-			{{ site.title }} &#183; {{ site.subtitle }}
-		{% else %}
-			{%if page.title %}
-				{{ page.title }} &#183; {{ site.title }}
-			{% else %}
-				{{ site.title }}
-			{% endif %}
-		{% endif %}
-	</title>
+	<title>{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 
 	<!-- CSS & fonts -->
-	<link rel="stylesheet" href="{{ "css/main.css" | prepend: site.baseurl }}">
-	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900,400italic%7CCinzel+Decorative' rel='stylesheet' type='text/css'>
-	<!-- {{page.type}}-->
-
+	<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl | replace: '//', '/' }}">
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900,400italic%7CSignika:700,300,400,600' rel='stylesheet' type='text/css'>
 
 	<!-- RSS -->
 	<link href="/atom.xml" type="application/atom+xml" rel="alternate" title="ATOM Feed" />

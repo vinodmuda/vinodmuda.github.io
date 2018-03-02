@@ -2,19 +2,7 @@
 
 /* Navigation */
 
-nav {
-  width: 14rem;
-  position: fixed;
-  background-color: $main-color;
-  top: 0;
-  bottom: 0;
-  left:-14rem;
-  color: $background-color;
-  opacity: 0.95;
-  transition: all 0.3s ease-in;
-  z-index: 1;
-  padding: 72px 0;
-  text-align: center;
+#nav, #nav-left { 
   a {
     display: block;
     color: $background-color;
@@ -23,34 +11,15 @@ nav {
     font-weight: 400;
     @media (min-width: 940px) {
       font-size: 1em;
-	  .active {
-	  }
     }
     &:hover {
-      background-color: #FFF;
+      background-color: lighten($main-color, 5%);
     }
   }
   span {
       font-weight: 200;
     }
 }
-
-
-nav.menu-open {
-  -ms-transform: translateX(14rem);
-  -webkit-transform: translateX(14rem);
-  transform: translateX(14rem);
-  width: 100%;
-  @media (min-width: 940px) {
-    width: 25%;
-  }
-}
-
-nav a.active {
-	background-color: #FFF;
-	color: $main-color;
-}
-
 
 #nav {
   @include nav-position(right);
@@ -70,8 +39,8 @@ nav a.active {
   @include open(14rem);
 }
 
-
 /* Separator after menu */
+
 #nav-list:after {
   display: block;
   content: '';
@@ -84,12 +53,6 @@ nav a.active {
 /* Icon menu */
 
 #nav-menu {
-  display: block;
-  position: fixed;
-  top: 35px;
-  left: 25px;
-  z-index: 10;
-  height: 24px;
   @include icon-position(right);
 }
 
@@ -139,16 +102,10 @@ nav a.active {
 }
 
 /* Main content */
-h1, h2, .h2 {
-	font-family: 'Cinzel Decorative', serif;
-	letter-spacing: 1px;
-	-moz-font-variant-ligatures: normal;
-	-webkit-font-variant-ligatures: normal;
-	font-variant-ligatures: normal;
-}
 
 .fixed {
   position: fixed;
+  width: 100%;
   @media (min-width: 940px) {
     position: static;
   }
@@ -156,21 +113,14 @@ h1, h2, .h2 {
 
 #container {
 	margin:0 auto;
-	max-width: 55em;
+	max-width: 730px;
 	padding: 0 1.5rem;
-	
-	&.bottom-margin {
-		margin-bottom: 3em;
-	}
 }
 
-
-
 #header {
-  text-align: center;
+	text-align: center;
   padding: 24px 0;
   position: relative;
-  
   a {
   	text-decoration: none;
   	color: $text-color;
@@ -182,7 +132,8 @@ h1, h2, .h2 {
   	display: block;
   }
   h1 {
-    font-weight: 700;
+  	font-family: 'Signika', sans-serif; //Emerald logo font
+    font-weight: 600;
   }
   &:after {
   	display: block;
@@ -207,9 +158,6 @@ h1, h2, .h2 {
   @media (min-width: 940px) {
       margin-bottom: 1.3334em;
     }
-  .by-line {
-	display: none;
-	}
 }
 
 .post+.post:before {
@@ -300,10 +248,8 @@ code {
 /* Footer */
 
 footer {
-	display:none;
-	/*
-	background-color: $main-color;
-	color: $background-color;
-	text-align: center;
-	padding: 0.6667em 0;*/
+  background-color: $main-color;
+  color: $background-color;
+  text-align: center;
+  padding: 0.6667em 0;
 }

@@ -1,13 +1,6 @@
 <header id="header">
-	<a href="{{ site.baseurl }}">Home</a>   
-	
-	<h1>{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
-	
-	{% if page.next %}
-		<a id="post-next" href="{{ site.baseurl }}{{ page.next.url }}" title="Go to the next post">&laquo; {{ page.next.title }}</a>
-	{% endif %}
-	{% if page.next && page.previous %}<span>-</span>{% endif %}
-	{% if page.previous %}
-		<a id="post-prev" href="{{ site.baseurl }}{{ page.previous.url }}" title="Go to the previous post">{{ page.previous.title }} &raquo;</a>
-	{% endif %}
+	<a href="{{ site.baseurl }}">
+		<img src="{{ "/img/emerald.svg" | prepend: site.baseurl | replace: '//', '/' }}" alt="Emerald Logo">
+	  <h1>emerald</h1>
+	</a>
 </header>

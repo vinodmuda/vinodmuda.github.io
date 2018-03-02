@@ -1,7 +1,5 @@
----
----
 <!DOCTYPE html>
-<html lang="{{ site.lang }}">
+<html>
 
 {% include head.html %}
 
@@ -12,7 +10,7 @@
 	  	{% include menu.html %}
     
     <!-- Icon menu -->
-	  <a href="#" {% if site.reverse == true %}id="nav-menu-left"{% else %}id="nav-menu"{% endif %}>
+	  <a {% if site.reverse == true %}id="nav-menu-left"{% else %}id="nav-menu"{% endif %}>
 	  	<div id="menu"></div>
 	  </a>
 
@@ -24,12 +22,7 @@
       {% endif %}
 
     <!-- Main content -->
-    {% if page.url == '/index.html' %}
-		<div id="container">
-    {% else %}
-		<div id="container" class="bottom-margin">
-    {% endif %}
-	  
+	  <div id="container">
 		  
 		<main>
 
@@ -66,7 +59,7 @@
         </div>
         {% endif %}
 
-	  </div><!-- /Container -->
+	  </div>
 	    
 	    <!-- Footer -->
 	    {% include footer.html %}
