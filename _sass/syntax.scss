@@ -1,0 +1,128 @@
+/* From Niklas Buschmann's Contrast theme  */
+code {
+    background-color: #333;
+    color: #FFF;
+    font-size: 14px;
+}
+
+
+.lineno {
+    color: lighten(#333, 25%);
+    margin: 0 1em 0 4px;
+}
+
+
+.highlight {
+    color: #FFF;
+    background-color: #333;
+}
+
+
+/* Comments */
+.highlight .c,
+.highlight .cm,
+.highlight .cp,
+.highlight .c1,
+.highlight .cs {
+    color: #75715e;
+    font-style: italic;
+ }
+
+
+ /* Number literals */
+ .highlight .mf,
+ .highlight .mh,
+ .highlight .mi,
+ .highlight .mo {
+    color: #ae81ff;
+}
+
+
+/* String literals */
+.highlight .sb,
+.highlight .sc,
+.highlight .sd,
+.highlight .s2 {
+    color: #e6db74;
+}
+
+
+/* Ausiliary Literals */
+.highlight .sh,
+.highlight .si,
+.highlight .sx,
+.highlight .sr,
+.highlight .s1,
+.highlight .ss {
+    color: #e6db74;
+}
+
+
+/* Escape */
+.highlight .se {
+    color: #ae81ff;
+}
+
+
+/* Variables and Classes names */
+.highlight .bp,
+.highlight .vc,
+.highlight .vg,
+.highlight .vi {
+    color: #f8f8f2;
+}
+
+
+/* Exceptions and functions names */
+.highlight .ne,
+.highlight .nf {
+    color: #a6e22e;
+}
+
+
+/* Namespaces and something else */
+.highlight .nl,
+.highlight .nn {
+    color: #f8f8f2;
+}
+
+
+/* Keywords */
+.highlight .k,
+.highlight .kp,
+.highlight .kr,
+.highlight .kt,
+.highlight .kc,
+.highlight .kd {
+    color: #66d9ef;
+}
+
+
+/* The rest */
+.highlight .err { color: #960050; background-color: #1e0010; }
+.highlight .l { color: #ae81ff; }
+.highlight .n { color: #f8f8f2; }
+.highlight .o { color: #f92672; }
+.highlight .p { color: #f8f8f2; }
+.highlight .ge { font-style: italic; }
+.highlight .gs { font-weight: bold; }
+.highlight .kn { color: #f92672; }
+.highlight .ld { color: #e6db74; }
+.highlight .m { color: #ae81ff; }
+.highlight .s { color: #e6db74; }
+.highlight .na { color: #a6e22e; }
+.highlight .nb { color: #f8f8f2; }
+.highlight .nc { color: #a6e22e; }
+.highlight .no { color: #66d9ef; }
+.highlight .nd { color: #a6e22e; }
+.highlight .ni { color: #f8f8f2; }
+.highlight .nx { color: #a6e22e; }
+.highlight .py { color: #f8f8f2; }
+.highlight .nt { color: #f92672; }
+.highlight .nv { color: #f8f8f2; }
+.highlight .ow { color: #f92672; }
+.highlight .w { color: #f8f8f2; }
+.highlight .il { color: #ae81ff; }
+.highlight .gu { color: #75715e; }
+.highlight .gd { color: #f92672; }
+.highlight .gi { color: #a6e22e; }

@@ -1,30 +1,31 @@
 ---
 layout: page
-title: About
+title: About Redmerald
+
 ---
+## About
 
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
+Redmerald is a theme based on [Jacopo Rabolini](http://www.jacoporabolini.com)'s [Emerald](https://github.com/KingFelix/emerald/)
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
 
-There are currently two themes built on Poole:
+## Setup & usage
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
+The [Jekyll documentation](http://jekyllrb.com) is the best starting point, if you haven't read it yet.
 
-Learn more and contribute on [GitHub](https://github.com/poole).
+Because Redmerald is based on another theme, you may want to read the [original documentation](https://github.com/KingFelix/emerald/blob/master/readme.md)
 
-## Setup
+Simply download the .zip folder from the [repository on Github](https://github.com/Vesuvium/redmerald/archive/master.zip).
 
-Some fun facts about the setup of this project include:
+After extracting the content from the folder into the selected directory, you can type ``jekyll serve`` from the terminal, than open your browser to ``0.0.0.0:4000/emerald/`` and you will find it there.
 
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.org), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
+It is also possible to fork the repository and use Github Pages as hosting.
 
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
+You will have to change the ``baseurl`` value into the ``_config.yml`` file, with the directory name of your project (for example /blog) or simply with a "/" (slash) if you want install Redmerald in the root.
 
-Thanks for reading!
+
+## License
+
+Redmerald is released under [MIT License](license.md).
+
+Enjoy!
+

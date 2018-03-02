@@ -1,0 +1,27 @@
+<nav {% if site.reverse == true %}id="nav-left"{% else %}id="nav"{% endif %}>
+	<div id="nav-list">
+
+    {% for item in site.navigation %}
+		{% if item.url == 'index' %}
+			{% if page.url == '/index.html' %}
+				<a href="{{ site.baseurl }}" class="active" title="{{ item.title }}">{{ item.title }}</a>
+			{% else %}
+				<a href="{{ site.baseurl }}" title="{{ item.title }}">{{ item.title }}</a>
+			{% endif %}
+		{% else %}
+			{% if page.url contains item.url %}
+				<a href="{% if site.baseurl == "/" %}{{ item.url }}{% else %}{{ item.url | prepend: site.baseurl }}{% endif %}" title="{{ item.title }}" class="active">{{ item.title }}</a>
+			{% else %}
+				<a href="{% if site.baseurl == "/" %}{{ item.url }}{% else %}{{ item.url | prepend: site.baseurl }}{% endif %}" title="{{ item.title }}">{{ item.title }}</a>
+			{% endif %}
+		{% endif %}
+    {% endfor %}
+
+    <!-- Nav links -->
+	{% include link.html %}
+
+	</div>
+  
+  <!-- Nav footer -->
+  {% include nav-footer.html %}
+</nav>

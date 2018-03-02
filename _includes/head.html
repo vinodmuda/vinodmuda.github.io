@@ -1,28 +1,36 @@
 <head>
-  <link href="http://gmpg.org/xfn/11" rel="profile">
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<!-- Meta -->
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	<meta name="generator" content="Jekyll">
+	
+	{% if page.description %}
+		<meta name="description" content="{{ page.description }}">
+	{% else %}
+		{% if site.description %}
+			<meta name="description" content="{{ site.description }}">
+		{% endif %}
+	{% endif %}
 
-  <!-- Enable responsiveness on mobile devices-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	<title>
+		{% if page.url == '/index.html' %}
+			{{ site.title }} &#183; {{ site.subtitle }}
+		{% else %}
+			{%if page.title %}
+				{{ page.title }} &#183; {{ site.title }}
+			{% else %}
+				{{ site.title }}
+			{% endif %}
+		{% endif %}
+	</title>
 
-  <title>
-    {% if page.title %}
-      {{ page.title }} &middot; {{ site.title }}
-    {% else %}
-      {{ site.title }} &middot; {{ site.tagline }}
-    {% endif %}
-  </title>
+	<!-- CSS & fonts -->
+	<link rel="stylesheet" href="{{ "css/main.css" | prepend: site.baseurl }}">
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900,400italic%7CCinzel+Decorative' rel='stylesheet' type='text/css'>
+	<!-- {{page.type}}-->
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="/public/css/poole.css">
-  <link rel="stylesheet" href="/public/css/syntax.css">
-  <link rel="stylesheet" href="/public/css/lanyon.css">
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700|PT+Sans:400">
 
-  <!-- Icons -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png">
-  <link rel="shortcut icon" href="/public/favicon.ico">
+	<!-- RSS -->
+	<link href="/atom.xml" type="application/atom+xml" rel="alternate" title="ATOM Feed" />
 
-  <!-- RSS -->
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
 </head>
